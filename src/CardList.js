@@ -2,10 +2,6 @@ import './CardList.css'
 
 const CardList = (props) => {
     let cardArray = props.cards;
-    // console.log(`cardsArray length is ${cardsArray.length}` )
-    function handleCardFlip (i) {
-
-    }
 
     let cards = cardArray.map((ele, index) => {
         let flipped = false;
@@ -34,30 +30,9 @@ const CardList = (props) => {
         </div>
         )
     })
-    // console.log(BassB);
     return (
         <div className="cardlist">
             {cards}
-            {/* <div className="cardRow">
-                <div className="imgCard">
-                    <img key="0" className="note-img" alt="" src={BassA} onClick={props.onClick}></img>
-                </div>  
-                <div className="imgCard">
-                    <img key="1" className="note-img" src={BassB} alt=""></img>
-                    
-                </div>  
-            </div>
-            <div className="cardRow"> */}
-                {/* <div className="imgCard">
-                    <img key="0" className="note-img" alt="" src={BassA}></img>
-                    
-                </div>  
-                <div className="imgCard">
-                    <img key="1" className="note-img" alt="" src={BassB}></img>
-                    
-                </div>  
-            </div> */}
-            
         </div>
         
     )
